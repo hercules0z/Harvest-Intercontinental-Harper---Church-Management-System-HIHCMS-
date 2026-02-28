@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768" role="img" aria-label="Harvest Intercontinental logo">
+  <defs>
+    <style>
+      .gold-fill { fill: #f7b500; }
+      .gold-stroke { fill: none; stroke: #f7b500; stroke-linecap: round; stroke-linejoin: round; }
+      .wordmark { fill: #f7b500; font-family: "Arial Black", "Montserrat", Arial, sans-serif; font-weight: 900; letter-spacing: 7px; }
+    </style>
+    <path id="top-arc" d="M 124 384 A 260 260 0 0 1 644 384" />
+    <path id="bottom-arc" d="M 644 384 A 260 260 0 0 1 124 384" />
+  </defs>
+
+  <path class="gold-stroke" d="M 52 544 A 332 332 0 0 1 52 224" stroke-width="26" />
+  <path class="gold-stroke" d="M 716 224 A 332 332 0 0 1 716 544" stroke-width="26" />
+
+  <g>
+    <line class="gold-stroke" x1="384" y1="220" x2="384" y2="560" stroke-width="24" />
+    <line class="gold-stroke" x1="250" y1="384" x2="518" y2="384" stroke-width="24" />
+
+    <path class="gold-stroke" d="M 304 244 C 270 312 270 456 304 524" stroke-width="24" />
+    <path class="gold-stroke" d="M 464 244 C 498 312 498 456 464 524" stroke-width="24" />
+    <path class="gold-stroke" d="M 246 286 C 214 338 214 430 246 482" stroke-width="20" />
+    <path class="gold-stroke" d="M 522 286 C 554 338 554 430 522 482" stroke-width="20" />
+  </g>
+
+  <text class="wordmark" font-size="82">
+    <textPath href="#top-arc" startOffset="50%" text-anchor="middle">HARVEST</textPath>
+  </text>
+
+  <text class="wordmark" font-size="72">
+    <textPath href="#bottom-arc" startOffset="50%" text-anchor="middle">INTERCONTINENTAL</textPath>
+  </text>
+</svg>

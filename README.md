@@ -1,7 +1,10 @@
-# Harvest-Intercontinental-Harper---Church-Management-System-HIHCMS-
-The Harvest Intercontinental Harper - Church Management System (HIHCMS) is a custom-engineered digital ecosystem designed to transform the administrative and spiritual landscape of the Harper location. It acts as a bridge between high-level mission goals and day-to-day church operations
+# Harvest Intercontinental -Harper  Church Management System (HIPCMS)
 
-📌 # Project Overview
+Enterprise-grade Church CRM Platform built for scalability, security, and multi-campus operations.
+
+---
+
+## 📌 Project Overview
 
 HIPCMS is a multi-tenant Church Management System designed to manage:
 
@@ -22,3 +25,295 @@ This platform is designed for:
 - Denominations
 - SaaS deployment for multiple churches
 
+---
+
+# 🏗️ Architecture Overview
+
+## Backend
+- Django
+- Django REST Framework
+- PostgreSQL
+- Redis
+- Celery
+- JWT Authentication
+- Docker
+
+## Frontend
+- React (Next.js recommended)
+- TailwindCSS or MUI
+- React Query
+
+## DevOps
+- Docker & Docker Compose
+- Nginx
+- Gunicorn
+- CI/CD (GitHub Actions)
+- Cloud Deployment Hostinger 
+
+---
+
+# 📂 Project Structure
+
+```
+HIPCMS/
+│
+├── backend/
+│   ├── config/
+│   ├── apps/
+│   │   ├── accounts/
+│   │   ├── churches/
+│   │   ├── members/
+│   │   ├── attendance/
+│   │   ├── contributions/
+│   │   ├── events/
+│   │   ├── payroll/
+│   │   ├── facilities/
+│   │   └── communications/
+│   ├── manage.py
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── src/
+│   ├── components/
+│   ├── pages/
+│   └── package.json
+│
+├── docker-compose.yml
+├── .env
+└── README.md
+```
+
+---
+
+# 🚀 Core Modules
+
+## 1. Membership Management
+- Member profiles
+- Household grouping
+- Baptism & membership status
+- Ministry assignments
+- Activity timeline
+- Member directory
+
+## 2. Attendance
+- Service attendance
+- Event attendance
+- Children check-in/out
+- Attendance analytics
+
+## 3. Contributions
+- Tithes & offerings
+- Fund categorization
+- Recurring donations
+- Online giving
+- Contribution statements
+- Financial reports
+
+## 4. Events
+- Event creation
+- Registration
+- Capacity management
+- Payment integration
+- Attendance tracking
+
+## 5. Payroll
+- Staff management
+- Salary configuration
+- Deductions & allowances
+- Payslip generation
+
+## 6. Facilities
+- Room booking
+- Equipment booking
+- Calendar management
+
+## 7. Communication
+- Bulk SMS
+- Bulk Email
+- Group messaging
+- Automated notifications
+
+---
+
+# 🔐 User Roles
+
+| Role | Access Level |
+|------|-------------|
+| Super Admin | Platform-level control |
+| Church Admin | Full church access |
+| Finance Officer | Contributions & accounting |
+| Pastor | Member & attendance visibility |
+| Ministry Leader | Ministry-level access |
+| HR Officer | Payroll management |
+| Check-in Staff | Attendance only |
+| Member | Self-service portal |
+
+---
+
+# 🧠 Database Entities (Core)
+
+- Church
+- Campus
+- User
+- Role
+- Member
+- Household
+- Ministry
+- Service
+- Attendance
+- Fund
+- Contribution
+- Event
+- EventRegistration
+- Payroll
+- FacilityBooking
+
+---
+
+# 🔄 System Workflow
+
+## Membership Lifecycle
+Visitor → Follow-up → Membership Class → Active Member → Inactive/Archived
+
+## Weekly Service
+Service Created → Attendance Recorded → Contributions Logged → Reports Generated → Follow-up Initiated
+
+## Contribution Flow
+Member Donation → Fund Allocation → Receipt Generated → Financial Report Update
+
+## Payroll Cycle
+Salary Setup → Monthly Processing → Payslip Generated → Accounting Updated
+
+---
+
+# 🛠️ Local Development Setup
+
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/yourusername/hipcms.git
+cd hipcms
+```
+
+---
+
+## 2️⃣ Backend Setup
+
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+Create `.env` file:
+
+```
+DEBUG=True
+SECRET_KEY=your_secret_key
+DATABASE_URL=postgres://user:password@localhost:5432/hipcms
+REDIS_URL=redis://localhost:6379
+```
+
+Run migrations:
+
+```bash
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+```
+
+---
+
+## 3️⃣ Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+# 🐳 Docker Setup (Recommended)
+
+```bash
+docker-compose up --build
+```
+
+---
+
+# 🌍 Deployment Strategy
+
+Production stack:
+
+- Ubuntu Server
+- Docker
+- Nginx
+- SSL via Let's Encrypt
+- PostgreSQL Managed DB
+- S3-compatible storage
+- Automated backups
+
+---
+
+# 📊 Roadmap
+
+## Phase 1 (Months 1–2)
+- Authentication & roles
+- Membership module
+- Attendance
+- Contributions
+- Basic reporting
+
+## Phase 2 (Month 3)
+- Payroll
+- Facilities
+- Event management
+- Online giving
+
+# 📈 Scalability Plan
+
+- Multi-tenant database architecture
+- Horizontal scaling with Docker
+- Background job processing via Celery
+- CDN for static/media files
+- Load balancer (Phase 2 scaling)
+
+---
+
+# 🔒 Security Standards
+
+- JWT authentication
+- Role-based access control
+- HTTPS enforced
+- Encrypted passwords
+- Audit logging
+- Rate limiting
+- Automated backups
+
+---
+
+# 🎯 Long-Term Vision
+
+hipcms is designed to evolve into a SaaS platform serving churches across regions with:
+
+- Mobile money integration
+- Subscription billing
+- Regional administration dashboards
+- API integrations
+- AI-powered church analytics
+
+---
+
+# 📜 License
+
+Proprietary – Internal Church / SaaS Use Only
+
+---
+
+# 👨‍💻 Maintainer
+
+Lead Architect: Duah Jeremiah Leakpor  
+Version: 1.0.0  
+Status: In Development
