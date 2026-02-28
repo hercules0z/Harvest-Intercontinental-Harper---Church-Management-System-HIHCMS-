@@ -1,8 +1,0 @@
-{
-  "/dashboard/page": "app/dashboard/page.js",
-  "/events/page": "app/events/page.js",
-  "/attendance/page": "app/attendance/page.js",
-  "/departments/page": "app/departments/page.js",
-  "/finance-tithes/page": "app/finance-tithes/page.js",
-  "/payroll/page": "app/payroll/page.js"
-}
