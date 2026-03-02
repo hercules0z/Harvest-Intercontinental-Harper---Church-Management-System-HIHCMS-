@@ -206,24 +206,7 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Create `.env` file:
 
-```
-DEBUG=True
-SECRET_KEY=your_secret_key
-DATABASE_URL=postgres://user:password@localhost:5432/hipcms
-REDIS_URL=redis://localhost:6379
-```
-
-Run migrations:
-
-```bash
-python manage.py migrate
-python manage.py createsuperuser
-python manage.py runserver
-```
-
----
 
 ## 3️⃣ Frontend Setup
 
